@@ -1,0 +1,28 @@
+{
+  "name": "dynamodb-schema-migrate",
+  "version": "1.0.0",
+  "description": "Easily Migrate a Existing Schema(Tables) from one Region to another Region",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/99xt/dynamodb-schema-migrate.git"
+  },
+  "keywords": [
+    "Dynamodb",
+    "aws",
+    "lib",
+    "sdk"
+  ],
+  "author": "Chamath , Niroshan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/99xt/dynamodb-schema-migrate/issues"
+  },
+  "homepage": "https://github.com/99xt/dynamodb-schema-migrate#readme",
+  "dependencies": {
+    "exe": "^1.0.2"
+  }
+}
