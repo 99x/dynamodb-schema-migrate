@@ -1,5 +1,3 @@
-
-//exports = module.exports
-var dynamo = require('./lib/dynamodb');
-var test= new dynamo();
-dynamo.execution('echo "hello world"');
+var utills = require('./lib/utills');
+var test= new utills();
+utills.execute('echo "hello world"');
