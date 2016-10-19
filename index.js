@@ -1,3 +1,3 @@
-var utills = require('./lib/utills');
-var test= new utills();
+var utils = require('./lib/utils');
+var test= new utils();
 utills.execute('echo "hello world"');
