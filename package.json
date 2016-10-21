@@ -23,6 +23,5 @@
   },
   "homepage": "https://github.com/99xt/dynamodb-schema-migrate#readme",
   "dependencies": {
-    "exe": "^1.0.2"
   }
 }
