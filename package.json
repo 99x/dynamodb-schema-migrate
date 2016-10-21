@@ -23,5 +23,7 @@
   },
   "homepage": "https://github.com/99xt/dynamodb-schema-migrate#readme",
   "dependencies": {
+    "aws-sdk":"^2.6.11",
+    "bluebird" : "^3.4.6"
   }
 }
