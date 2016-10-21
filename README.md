@@ -1,6 +1,6 @@
 # Migrate DynamoDB Schema across regions
 
-[![npm](https://img.shields.io/npm/v/npm.svg)]() [![dynamodb](https://img.shields.io/badge/DynamoDB-migrate-blue.svg)]()
+[![npm](https://img.shields.io/npm/v/npm.svg)]() [![David](https://img.shields.io/david/strongloop/express.svg)]()  [![dynamodb](https://img.shields.io/badge/DynamoDB-migrate-blue.svg)]()
 
 
 Easily Migrate a Existing Schema(Tables) from one Region to another Region
