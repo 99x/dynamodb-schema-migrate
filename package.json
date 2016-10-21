@@ -4,7 +4,7 @@
   "description": "Easily Migrate a Existing Schema(Tables) from one Region to another Region",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 0"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,5 @@
   },
   "homepage": "https://github.com/99xt/dynamodb-schema-migrate#readme",
   "dependencies": {
-    "exe": "^1.0.2"
   }
 }

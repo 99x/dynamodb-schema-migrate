@@ -1,3 +1,7 @@
 var utils = require('./lib/utils');
 var test= new utils();
-utills.execute('echo "hello world"');
+
+// Example
+utils.getTableSchema('Customer','eu-west-1');
+
+
