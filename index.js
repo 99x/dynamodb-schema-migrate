@@ -1,6 +1,6 @@
 var utils = require('./lib/utils');
 
-var array = [ "interns","task"]; // your table names here
+var array = ["interns", "task"]; // your table names here
 var from_region = "us-east-1";
 var to_region = "ap-northeast-1"
 
