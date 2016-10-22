@@ -1,34 +1,37 @@
 var utils = require('./lib/utils');
 
-var array = ["interns", "task"]; // your table names here
-var from_region = "us-east-1";
-var to_region = "ap-northeast-1"
+var DSMigrate = function() {};
 
-
-var createTableArray = function(array, from_region, to_region) {
-    var tableArray = [];
+DSMigrate.migrateSchema = function(tables, from_region, to_region, profile) {
+    var tabletables = [];
     var promises = [];
 
-    for (var i = 0; i < array.length; i++) {
-        promises.push(utils.getTableSchema(array[i], from_region));
+    //console.log(tables+" "+from_region+" "+to_region+" "+ profile)
+
+    if(!profile){
+    	utils.setDefaultProfile(profile);
+    }
+    for (var i = 0; i < tables.length; i++) {
+        promises.push(utils.getTableSchema(tables[i], from_region));
     }
 
     Promise.all(promises)
         .then(function(results) {
+
             console.log("Table schema retreival done");
-            var promises2 = [];
+            var promises_all_tables = [];
 
             for (var j = 0; j < results.length; j++) {
-                promises2.push(utils.createTable(results[j], to_region));
+               promises_all_tables.push(utils.createTable(results[j], to_region));
             }
 
-            Promise.all(promises2)
+            Promise.all(promises_all_tables)
                 .then(function(results) {
                     console.log("Tables creation done");
-                    console.log(results);
+                    return (results);
                 })
                 .catch(function(e) {
-                    console.log(e);
+                    return (e);
                 });
         })
         .catch(function(e) {
@@ -37,4 +40,5 @@ var createTableArray = function(array, from_region, to_region) {
 
 };
 
-createTableArray(array, from_region, to_region);
+module.exports = DSMigrate;
+
